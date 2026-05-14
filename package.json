@@ -1,0 +1,17 @@
+{
+  "name": "audiolibrix-abs",
+  "version": "0.1.0",
+  "description": "Audiobookshelf metadata provider from Audiolibrix.cz",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

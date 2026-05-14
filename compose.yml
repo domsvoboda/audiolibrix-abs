@@ -1,0 +1,15 @@
+---
+services:
+  audiolibrix-abs:
+    build: .
+    container_name: audiolibrix-abs
+    environment:
+      - PORT=3000
+      - AUTH_TOKEN=
+      - ADD_AUDIOLIBRIX_LINK_TO_DESCRIPTION=true
+      - METADATA_CONCURRENCY=3
+      - MAX_SEARCH_RESULTS=10
+      - REQUEST_TIMEOUT_MS=15000
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
